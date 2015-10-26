@@ -1,0 +1,9 @@
+E:\study\vksis\vksis1\vksis1\bin\Release\vksis1.exe.config
+E:\study\vksis\vksis1\vksis1\bin\Release\vksis1.exe
+E:\study\vksis\vksis1\vksis1\bin\Release\vksis1.pdb
+E:\study\vksis\vksis1\vksis1\obj\Release\vksis1.ComChatForm.resources
+E:\study\vksis\vksis1\vksis1\obj\Release\vksis1.Properties.Resources.resources
+E:\study\vksis\vksis1\vksis1\obj\Release\vksis1.csproj.GenerateResource.Cache
+E:\study\vksis\vksis1\vksis1\obj\Release\vksis1.exe
+E:\study\vksis\vksis1\vksis1\obj\Release\vksis1.pdb
+E:\study\vksis\vksis1\vksis1\obj\Release\vksis1.csprojResolveAssemblyReference.cache

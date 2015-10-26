@@ -1,0 +1,8 @@
+E:\study\vksis\vksis1\vksis1\bin\Debug\vksis1.exe.config
+E:\study\vksis\vksis1\vksis1\bin\Debug\vksis1.exe
+E:\study\vksis\vksis1\vksis1\bin\Debug\vksis1.pdb
+E:\study\vksis\vksis1\vksis1\obj\Debug\vksis1.Properties.Resources.resources
+E:\study\vksis\vksis1\vksis1\obj\Debug\vksis1.csproj.GenerateResource.Cache
+E:\study\vksis\vksis1\vksis1\obj\Debug\vksis1.exe
+E:\study\vksis\vksis1\vksis1\obj\Debug\vksis1.pdb
+E:\study\vksis\vksis1\vksis1\obj\Debug\vksis1.ComChatForm.resources
