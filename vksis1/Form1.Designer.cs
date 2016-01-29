@@ -31,16 +31,14 @@
             this.outputTextBox = new System.Windows.Forms.RichTextBox();
             this.inputTextBox = new System.Windows.Forms.TextBox();
             this.sendButton = new System.Windows.Forms.Button();
-            this.initButton = new System.Windows.Forms.Button();
-            this.portsListBox = new System.Windows.Forms.ListBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // outputTextBox
@@ -69,50 +67,6 @@
             this.sendButton.Text = "Send";
             this.sendButton.UseVisualStyleBackColor = true;
             this.sendButton.Click += new System.EventHandler(this.sendButton_Click);
-            // 
-            // initButton
-            // 
-            this.initButton.Location = new System.Drawing.Point(359, 128);
-            this.initButton.Name = "initButton";
-            this.initButton.Size = new System.Drawing.Size(75, 23);
-            this.initButton.TabIndex = 3;
-            this.initButton.Text = "Connect";
-            this.initButton.UseVisualStyleBackColor = true;
-            this.initButton.Click += new System.EventHandler(this.InitButton_Click);
-            // 
-            // portsListBox
-            // 
-            this.portsListBox.FormattingEnabled = true;
-            this.portsListBox.Location = new System.Drawing.Point(188, 27);
-            this.portsListBox.Name = "portsListBox";
-            this.portsListBox.Size = new System.Drawing.Size(120, 95);
-            this.portsListBox.TabIndex = 5;
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(314, 27);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 95);
-            this.listBox1.TabIndex = 8;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(185, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 13);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Right";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(311, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(25, 13);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Left";
             // 
             // label3
             // 
@@ -157,19 +111,44 @@
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(203, 82);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 18;
+            this.textBox3.Text = "127.0.0.1";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(250, 165);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Init";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(200, 65);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(125, 13);
+            this.label2.TabIndex = 21;
+            this.label2.Text = "Remote receiver address";
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(449, 289);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.portsListBox);
-            this.Controls.Add(this.initButton);
             this.Controls.Add(this.sendButton);
             this.Controls.Add(this.inputTextBox);
             this.Controls.Add(this.outputTextBox);
@@ -184,16 +163,14 @@
         private System.Windows.Forms.RichTextBox outputTextBox;
         private System.Windows.Forms.TextBox inputTextBox;
         private System.Windows.Forms.Button sendButton;
-        private System.Windows.Forms.Button initButton;
-        private System.Windows.Forms.ListBox portsListBox;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

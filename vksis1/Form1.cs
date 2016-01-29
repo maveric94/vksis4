@@ -19,9 +19,6 @@ namespace vksis1
         {
             InitializeComponent();
 
-            portsListBox.Items.AddRange(SerialPort.GetPortNames());
-            listBox1.Items.AddRange(SerialPort.GetPortNames());
-
             FormClosing += ComChatForm_FormClosing;
             outputTextBox.TextChanged += outputTextBox_TextChanged;
             inputTextBox.KeyDown += inputTextBox_KeyDown;
@@ -64,6 +61,7 @@ namespace vksis1
                 str = "Unknown error.\n";
 
             this.Invoke((MethodInvoker)delegate { outputTextBox.AppendText(str); });
+            //outputTextBox.AppendText(str);
         }
 
         private void sendButton_Click(object sender, EventArgs e)
@@ -79,19 +77,21 @@ namespace vksis1
             inputTextBox.Clear();
         }
 
-        private void InitButton_Click(object sender, EventArgs e)
-        {
-            byte adr = 0;
-            byte.TryParse(textBox1.Text, out adr);
-            _node = new Node(portsListBox.SelectedItem.ToString(), listBox1.SelectedItem.ToString(), adr, !checkBox2.Checked);
-
-            sendButton.Enabled = true;
-        }
-
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
             _node.isEnabled = !checkBox2.Checked;
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            byte adr = 0;
+            byte.TryParse(textBox1.Text, out adr);
+
+            _node = new Node(adr, !checkBox2.Checked, textBox3.Text);
+            sendButton.Enabled = true;
+            textBox3.Enabled = false;
+            button1.Enabled = false;
+            textBox1.Enabled = false;
+        }
     }
 }

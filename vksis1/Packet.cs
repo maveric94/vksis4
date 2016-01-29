@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Collections.Generic;
 
 namespace vksis1
 {
@@ -14,7 +13,8 @@ namespace vksis1
             Extract,
             Add,
         }
-
+        // packet structure
+        // eop - source address - destination address - data - crc8 checksumm - eop
         public static byte endOfPacketByte = 0x7E;
         public static int bytesPerPacket = 10;
         private static List<bool> forbiddenSequence = new List<bool> { false, true, true, true, true, true, true };
